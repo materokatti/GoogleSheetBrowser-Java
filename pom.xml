@@ -13,9 +13,14 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependency>
-        <groupId>com.google.apis</groupId>
-        <artifactId>google-api-services-sheets</artifactId>
-        <version>v4-rev621-1.25.0</version>
-    </dependency>
+
+    <!-- 의존성을 정의하는 부분 : 빌드시 자동으로 다운로드 -->
+    <dependencies>
+        <!-- Google Sheets API 클라이언트 라이브러리 -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-sheets</artifactId>
+            <version>v4-rev621-1.25.0</version>
+        </dependency>
+    </dependencies>
 </project>
